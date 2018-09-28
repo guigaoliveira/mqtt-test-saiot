@@ -1,0 +1,20 @@
+{
+  "name": "mqtt_saiot",
+  "version": "0.1.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "GM",
+  "license": "MIT",
+  "private": false,
+  "engines": {
+    "node": "^7.10.x",
+    "npm": "^5.x"
+  },
+  "dependencies": {
+    "mosca": "^2.8.3",
+    "mqtt": "^2.18.8",
+    "winston": "^2.4.4"
+  }
+}
