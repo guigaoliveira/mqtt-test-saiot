@@ -5,21 +5,22 @@ console.log('clientzinho!')
 
 client.on('connect', () => {
   console.log('Conectado clientzinho!')
+  const data = JSON.stringify([
+                  {
+                    dados: [
+                      {
+                        serial: 'as',
+                        pulso: 1,
+                      },
+                    ],
+                    data_hora: Date.now,
+                  },
+                ])
   setInterval(
     () =>
       client.publish(
         '/v1/history/hidrometro/',
-        JSON.stringify([
-          {
-            dados: [
-              {
-                serial: 'as',
-                pulso: 1,
-              },
-            ],
-            data_hora: Date.now,
-          },
-        ]),
+        data,
       ),
     3000,
   )
