@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "mosca": "^2.8.3",
-    "mqtt": "^2.18.8",
+    "mqtt": "^3.0.0",
     "winston": "^2.4.4"
   }
 }
